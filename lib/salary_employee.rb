@@ -1,8 +1,8 @@
-class SalaryEmployee
-  attr_accessor(:name)
+require_relative("employee.rb")
 
+class SalaryEmployee < Employee
   def initialize(info)
-    @name = info[:name]
+    super(info)
     @salary = info[:salary].to_i
   end
 
