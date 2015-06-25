@@ -6,5 +6,5 @@ loader = EmployeeLoader.new("employees.txt", factory)
 employees = loader.data
 
 employees.each do |employee|
-  p employee
+  puts "#{employee.name} -> #{employee.payroll}"
 end
